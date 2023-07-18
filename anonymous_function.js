@@ -11,3 +11,14 @@ const square = function (arr) {
 };
 const output = square(arr);
 console.log(output);
+
+const numbers = [5, 8, 12];
+const calculateSquare = function (numbers) {
+  let square = [];
+  const result = numbers.map((n) => n * n);
+  square.push(result);
+  return square;
+};
+
+const result2 = calculateSquare(numbers);
+console.log(result2);
